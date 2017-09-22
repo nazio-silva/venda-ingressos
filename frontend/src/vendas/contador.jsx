@@ -24,7 +24,7 @@ export default class Contador extends Component {
 	}
 
 	render() {
-		
+		const aux = this.state.contador * 299.00
 		return (
 			<div className = 'btn-group-small'>
 				
@@ -33,7 +33,7 @@ export default class Contador extends Component {
 						{this.state.contador}
 				<button type = 'button' className = 'btn btn-danger' 
 					onClick={this.diminuir}> - </button>
-				<td>{this.state.contador}</td>
+				{aux}
 			</div>
 		);
 	}
