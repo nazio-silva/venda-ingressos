@@ -5,6 +5,7 @@ export default class Contador extends Component {
 		super(props)
 			this.state = { 
 				contador: 0,
+				//aux: 0,
 		}
 
 		this.diminuir = this.diminuir.bind(this);
@@ -33,7 +34,7 @@ export default class Contador extends Component {
 						{this.state.contador}
 				<button type = 'button' className = 'btn btn-danger' 
 					onClick={this.diminuir}> - </button>
-				{aux}
+						{aux}
 			</div>
 		);
 	}

@@ -25,10 +25,10 @@ export default class Finalizar extends Component {
 			<div className = 'btn-group-small'>
 			
 				<button type = 'button' className = 'btn btn-primary' 
-					onClick = {this.alertaFinaliza}> Finalizar </button>
+					onClick = {this.alertaFinaliza} style={{margin: 10}}> Finalizar </button>
 
 				<button type = 'button' className = 'btn btn-danger'
-					onClick = {this.alertaCancela}> Cancelar </button>
+					onClick = {this.alertaCancela} style={{margin: 10}}> Cancelar </button>
 
 			</div>
 		);

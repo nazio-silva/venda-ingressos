@@ -10,7 +10,7 @@ export default props => (
 						className = 'form-control' placeholder = 'Valor Total'/>
 					</strong>
 
-					<strong> Boleto: </strong>
+					<strong style={{marginLeft: 150, padding: 10}}> Boleto: </strong>
 					<button className="btn btn-primary">
 						<span className = "glyphicon glyphicon-save"></span>
 					</button>
@@ -18,11 +18,12 @@ export default props => (
 
 				<br />
 
-				<strong> Código: <input type = 'text' 
-						className = 'form-control' placeholder = 'Código da Compra' />
+				<strong> 
+					Código: 
+					<input type = 'text' style={{marginLeft: 28}} className = 'form-control' placeholder = 'Código da Compra' />
 				</strong>
 
-				<strong> Baixar Ingresso: </strong>
+				<strong style={{marginLeft: 150, padding: 10}}> Baixar Ingresso: </strong>
 					<button className="btn btn-primary">
 						<span className = "glyphicon glyphicon-save"></span>
 					</button>
