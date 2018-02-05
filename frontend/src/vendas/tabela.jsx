@@ -4,12 +4,14 @@ import Cabecalho from './cabecalho'
 import PageHeader from '../template/pageHeader'
 import Finalizar from './finalizar'
 
+//import Props from './props' //Passando paramentros
+
 export default class Tabela extends Component { 
 	constructor(props) {
 		super(props)
-			this.state = {
-				aux: 0.00
-			}
+			this.state = { 
+				//value: ''
+		}	
 	}
 	
 	render() { 
@@ -42,8 +44,8 @@ export default class Tabela extends Component {
 					    		<td><i className = 'fa fa-male' arial-hidden = 'true'></i></td>
 					    		<td>1</td>
 					    		<td>260,00</td>
-					    		<td>39,00</td>
-					    		<td>{this.state.aux}</td>
+					    		<td>39,00</td>								    	
+					    		<td>0.00</td>
 								
 					    	</tr>
 

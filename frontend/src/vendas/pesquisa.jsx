@@ -16,15 +16,8 @@ export default props => (
 					</button>
 				</h4>
 
-				<br />
-
-				<strong> 
-					Código: 
-					<input type = 'text' style={{marginLeft: 28}} className = 'form-control' placeholder = 'Código da Compra' />
-				</strong>
-
-				<strong style={{marginLeft: 150, padding: 10}}> Baixar Ingresso: </strong>
-					<button className="btn btn-primary">
+				<strong> Baixar Ingresso: </strong>
+					<button className="btn btn-primary" style={{marginLeft: 10}}>
 						<span className = "glyphicon glyphicon-save"></span>
 					</button>
 

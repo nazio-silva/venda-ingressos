@@ -5,9 +5,8 @@ export default class Contador extends Component {
 		super(props)
 			this.state = { 
 				contador: 0,
-				//aux: 0,
+				subTotal: 10				
 		}
-
 		this.diminuir = this.diminuir.bind(this);
 		this.aumentar = this.aumentar.bind(this);	
 	}
@@ -15,6 +14,7 @@ export default class Contador extends Component {
 	aumentar(){
 		const contagem = this.state.contador;
 			this.setState({contador:contagem + 1});
+			
 	}
 	
 	diminuir(){
@@ -25,16 +25,19 @@ export default class Contador extends Component {
 	}
 
 	render() {
-		const aux = this.state.contador * 299.00
+		const subTotal = this.state.contador * 299.00		
+			this.state.subTotal = subTotal			
+			
 		return (
+			
 			<div className = 'btn-group-small'>
 				
 				<button type = 'button' className = 'btn btn-primary' 
 					onClick={this.aumentar}> + </button>
 						{this.state.contador}
 				<button type = 'button' className = 'btn btn-danger' 
-					onClick={this.diminuir}> - </button>
-						{aux}
+					onClick={this.diminuir}> - </button>						
+						{this.state.subTotal}
 			</div>
 		);
 	}
